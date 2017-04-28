@@ -1,0 +1,10 @@
+body {
+   background: url(../_images/background_menu_boolamp.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#buttons {
+   position: absolute;
+   left: 30%;
+   top: 50%;
+}

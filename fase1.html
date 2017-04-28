@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Boolamp</title>
+   <meta charset="utf-8"/>
+   <link rel="stylesheet" href="_css/fases.css" />
+   <link rel="stylesheet" href="_css/buttons.css" />
+   <script src="_js/buttons.js"></script>
+   <script src="_js/fase1.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+         setTimeout(loop, 33);
+      });
+   </script>
+</head>
+<body>
+   <img id="lamp" src="_images/lamp_off.png" style="position: absolute; left: 40%;"onclick="mu();"/>
+   <div id="buttons">
+      <button class="button" id="botao1" onclick="stg1.b1=button_action('botao1'); console.log(stg1.b1);">true</button> <span>and</span>
+      <button class="button" id="botao2" onclick="stg1.b2=button_action('botao2');">true</button> <span>and</span>
+      <button class="button" id="botao3" onclick="stg1.b3=button_action('botao3');">true</button> <span>and</span>
+      <button class="button" id="botao4" onclick="stg1.b4=button_action('botao4');">true</button>
+   </div>
+</body>
+</html>
