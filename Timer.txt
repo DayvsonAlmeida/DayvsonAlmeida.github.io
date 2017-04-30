@@ -1,0 +1,1 @@
+Incrementar um Timer durante as fases para controlar o tempo máximo que o usuário ficará em cada fase
