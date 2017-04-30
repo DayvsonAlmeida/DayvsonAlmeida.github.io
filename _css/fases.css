@@ -5,6 +5,12 @@ body {
 }
 #buttons {
    position: absolute;
-   left: 30%;
+   left: 25%;
    top: 50%;
+}
+span {
+   font-family: Comic Sans MS;
+   font-family: monospace;
+   font-size: 30px;
+   color: white;
 }
