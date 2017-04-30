@@ -26,3 +26,7 @@ function button_mouseout(id){
       document.getElementById(id).style.backgroundColor = '#FF0000';
    }
 }
+
+function show_button(id){
+   $(id).show(1000);
+}

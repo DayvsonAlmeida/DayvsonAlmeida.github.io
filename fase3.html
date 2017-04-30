@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Boolamp</title>
+   <meta charset="utf-8"/>
+   <link rel="stylesheet" href="_css/fases.css" />
+   <link rel="stylesheet" href="_css/buttons.css" />
+   <script src="_js/buttons.js"></script>
+   <script src="_js/fase3.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+         setTimeout(loop, 33);
+      });
+   </script>
+</head>
+<body>
+   <img id="lamp" src="_images/lamp_off.png" style="position: absolute; left: 40%;"/>
+   <div id="buttons" style="left: 15%;">
+      <span>not (</span>
+      <button class="button" id="botao1" onclick="stg3.b1=button_action('botao1');"onmouseover="button_mouseover('botao1');"
+            onmouseout="button_mouseout('botao1');">true</button>
+      <span> and </span>
+      <button class="button" id="botao2" onclick="stg3.b2=button_action('botao2');"onmouseover="button_mouseover('botao2');"
+            onmouseout="button_mouseout('botao2');"style="background-color: #FF0000;">false</button>
+      <span> or not </span>
+      <button class="button" id="botao3" onclick="stg3.b3=button_action('botao3');"onmouseover="button_mouseover('botao3');"
+            onmouseout="button_mouseout('botao3');"style="background-color: #FF0000;">false</button>
+      <span>) and not </span>
+      <button class="button" id="botao4" onclick="stg3.b4=button_action('botao4');" onmouseover="button_mouseover('botao4');"
+            onmouseout="button_mouseout('botao4');" style="background-color: #FF000;">true</button>
+   </div>
+   <a href="fase4.html"><button class="button" id="next" hidden>Next</button></a>
+</body>
+</html>
