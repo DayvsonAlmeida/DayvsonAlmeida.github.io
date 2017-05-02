@@ -1,4 +1,4 @@
-var stg1 = {b1:false, b2:false, b3:false, b4:false}
+var stg1 = {b1:false, b2:false, b3:false, b4:false};
 
 function update(){
    var ok = false;
@@ -6,6 +6,10 @@ function update(){
    if(ok){
       $("#lamp").attr("src", "_images/lamp_on.png");
       show_button('#next');
+      $("#botao1").off("click");
+      $("#botao2").off("click");
+      $("#botao3").off("click");
+      $("#botao4").off("click");
    }
 }
 
@@ -16,5 +20,5 @@ function draw(){
 function loop(){
    update();
    draw();
-   window.setTimeout(loop, 33);
+   setTimeout(loop, 33);
 }
