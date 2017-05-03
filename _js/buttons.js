@@ -28,5 +28,5 @@ function button_mouseout(id){
 }
 
 function show_button(id){
-   $(id).show(1000);
+   $(id).show();
 }
