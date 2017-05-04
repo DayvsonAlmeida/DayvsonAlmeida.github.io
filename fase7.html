@@ -7,36 +7,43 @@
    <link rel="stylesheet" href="_css/buttons.css" />
    <script src="_js/buttons.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="_js/fase3.js"></script>
+   <script src="_js/fase7.js"></script>
    <script>
       $(document).ready(function(){
          loop();
          $("#botao1").on("click", function(){
-            stg3.b1 = button_action("botao1");
+            stg7.b1 = button_action("botao1");
          });
          $("#botao2").on("click", function(){
-            stg3.b2 = button_action("botao2");
+            stg7.b2 = button_action("botao2");
          });
          $("#botao3").on("click", function(){
-            stg3.b3 = button_action("botao3");
+            stg7.b3 = button_action("botao3");
+         });
+         $("#botao4").on("click", function(){
+            stg7.b4 = button_action("botao4");
          });
       });
    </script>
 </head>
 <body>
    <img id="lamp" src="_images/lamp_off.png" style="position: absolute; left: 40%; top: 10%"/>
-   <div id="buttons" style="left: 28%;">
+   <div id="buttons" style="left: 18%;">
+      <span> not( not </span>
       <button class="button" id="botao1" onmouseover="button_mouseover('botao1');"
             onmouseout="button_mouseout('botao1');"style="background-color: #FF0000;">false</button>
-      <span> and ( </span>
+      <span> ) and ( </span>
       <button class="button" id="botao2" onmouseover="button_mouseover('botao2');"
             onmouseout="button_mouseout('botao2');"style="background-color: #FF0000;">false</button>
-      <span> or not </span>
+      <span> and </span>
       <button class="button" id="botao3" onmouseover="button_mouseover('botao3');"
             onmouseout="button_mouseout('botao3');">true</button>
+      <span> or </span>
+      <button class="button" id="botao4" onmouseover="button_mouseover('botao4');"
+            onmouseout="button_mouseout('botao4');"style="background-color: #FF0000;">false</button>
       <span> )</span>
    </div>
-   <a href="fase4.html"><button class="button" id="next" hidden>Next</button></a>
+   <a href="congrats.html"><button class="button" id="next" hidden>Next</button></a>
    <a href="menu.html"><button class="button" id="reset" hidden>Reset</button></a>
 </body>
 </html>

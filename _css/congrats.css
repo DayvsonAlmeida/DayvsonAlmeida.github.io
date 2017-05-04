@@ -1,0 +1,30 @@
+body {
+   background: url(../_images/background_menu_boolamp.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: justify;
+}
+h1 {
+   font-family: 'Inknut Antiqua', serif;
+   font-size: 30px;
+   color: orange;
+   padding: 20px;
+   position: absolute;
+   top: 20%;
+   left: 40%;
+}
+p{
+   font-family: 'Inknut Antiqua', serif;
+   font-size: 20px;
+   color: white;
+   padding: 20px;
+   position: absolute;
+   left: 32%;
+   top: 40%;
+}
+#thanks{
+   padding: 20px;
+   position: absolute;
+   left: 22%;
+   top: 50%;
+}

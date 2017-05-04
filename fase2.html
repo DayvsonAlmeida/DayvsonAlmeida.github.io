@@ -6,27 +6,31 @@
    <link rel="stylesheet" href="_css/fases.css" />
    <link rel="stylesheet" href="_css/buttons.css" />
    <script src="_js/buttons.js"></script>
-   <script src="_js/fase2.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="_js/fase2.js"></script>
    <script>
       $(document).ready(function(){
-         setTimeout(loop, 33);
+         loop();
+         $("#botao1").on("click", function(){
+            stg2.b1 = button_action("botao1");
+         });
+         $("#botao2").on("click", function(){
+            stg2.b2 = button_action("botao2");
+         });
       });
    </script>
 </head>
 <body>
    <img id="lamp" src="_images/lamp_off.png" style="position: absolute; left: 40%; top: 10%"/>
-   <div id="buttons">
-      <span>not (</span>
-      <button class="button" id="botao1" onclick="stg2.b1=button_action('botao1');"onmouseover="button_mouseover('botao1');"
-            onmouseout="button_mouseout('botao1');"style="background-color: #FF0000;">true</button>
-      <span>or</span>
-      <button class="button" id="botao2" onclick="stg2.b2=button_action('botao2');"onmouseover="button_mouseover('botao2');"
-            onmouseout="button_mouseout('botao2');"style="background-color: #FF0000;">false</button>
-      <span>) and</span>
-      <button class="button" id="botao3" onclick="stg2.b3=button_action('botao3');"onmouseover="button_mouseover('botao3');"
-            onmouseout="button_mouseout('botao3');"style="background-color: #FF0000;">false</button>
+   <div id="buttons" style="position: absolute; left: 34%;">
+      <span>not </span>
+      <button class="button" id="botao1" onmouseover="button_mouseover('botao1');"
+         onmouseout="button_mouseout('botao1')">true</button>
+      <span> and </span>
+      <button class="button" id="botao2" onmouseover="button_mouseover('botao2');"
+         onmouseout="button_mouseout('botao2'); "style="background-color: #FF0000;">false</button>
    </div>
    <a href="fase3.html"><button class="button" id="next" hidden>Next</button></a>
+   <a href="menu.html"><button class="button" id="reset" hidden>Reset</button></a>
 </body>
 </html>

@@ -1,0 +1,49 @@
+body {
+   background: url(../_images/background_jogo.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: justify;
+}
+h1 {
+   font-family: 'Inknut Antiqua', serif;
+   font-size: 30px;
+   color: white;
+   padding: 20px;
+   position: absolute;
+   left: 30%;
+}
+span {
+   font-family: 'Inknut Antiqua', serif;
+   font-size: 15px;
+   color: white;
+}
+p {
+   font-family: 'Inknut Antiqua', serif;
+   font-size: 15px;
+   color: white;
+}
+#inst {
+   position: absolute;
+   top: 15%;
+   left: 5%;
+}
+#esquerda {
+   padding: 10px;
+   width: 500px;
+   float: left;
+}
+div#inst #exemplo{
+   position: relative;
+   display: inline;
+   left: 10%;
+}
+#direita {
+   padding: 10px;
+   width: 700px;
+   float: right;
+}
+#entrar {
+   position: absolute;
+   top: 80%;
+   left: 40%;
+}

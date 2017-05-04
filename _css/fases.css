@@ -15,7 +15,7 @@ span {
    color: white;
 }
 
-#next {
+#next, #reset {
    position: absolute;
    top: 80%;
    left: 45%;
