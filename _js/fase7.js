@@ -1,5 +1,5 @@
 var stg7 = {b1: false, b2: false, b3: true, b4: false}
-var timer = 10 000;
+var timer = 10000;
 var width = 500;
 
 function update(){
@@ -12,7 +12,6 @@ function update(){
       $("#botao2").off("click");
       $("#botao3").off("click");
       $("#botao4").off("click");
-      clearInterval(lopp);
    }else{
       timer -= 33;
       width -= 1.65;
