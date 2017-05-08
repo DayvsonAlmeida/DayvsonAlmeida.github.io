@@ -11,6 +11,7 @@
    <script>
       $(document).ready(function(){
          loop();
+         setInterval(loop, 33);
          $("#botao1").on("click", function(){
             stg3.b1 = button_action("botao1");
          });
@@ -25,6 +26,9 @@
 </head>
 <body>
    <img id="lamp" src="_images/lamp_off.png" style="position: absolute; left: 40%; top: 10%"/>
+   <div id="Timer">
+      <div id="TimeLeft"></div>
+   </div>
    <div id="buttons" style="left: 28%;">
       <button class="button" id="botao1" onmouseover="button_mouseover('botao1');"
             onmouseout="button_mouseout('botao1');"style="background-color: #FF0000;">false</button>

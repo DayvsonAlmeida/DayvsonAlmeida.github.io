@@ -20,3 +20,14 @@ span {
    top: 80%;
    left: 45%;
 }
+
+#Timer{
+   width: 500px;
+   height: 20px;
+   background-color: grey;
+}
+#TimeLeft{
+   width: 500px;
+   height: 20px;
+   background-color: green;
+}
