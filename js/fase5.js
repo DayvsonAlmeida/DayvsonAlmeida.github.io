@@ -1,16 +1,17 @@
-var stg4 = {b1: true, b2: false, b3: false}
+var stg5 = {b1: true, b2: false, b3: false, b4: true}
 var timer = 10000;
 var width = 500;
 
 function update(){
    var ok = false;
-   ok = !(stg4.b1 || stg4.b2) && stg4.b3;
+   ok = !(stg5.b1 && stg5.b2 || !(stg5.b3)) && !stg5.b4;
    if(ok){
-      $("#lamp").attr("src", "_images/lamp_on.png");
+      $("#lamp").attr("src", "images/lamp_on.png");
       show_button('#next');
       $("#botao1").off("click");
       $("#botao2").off("click");
       $("#botao3").off("click");
+      $("#botao4").off("click");
    }else{
       timer -= 33;
       width -= 1.65;
@@ -27,6 +28,7 @@ function update(){
          $("#botao1").off("click");
          $("#botao2").off("click");
          $("#botao3").off("click");
+         $("#botao4").off("click");
       }
    }
 }

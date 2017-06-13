@@ -6,7 +6,7 @@ function update(){
    var ok = false;
    ok = !(!stg7.b1) && (stg7.b2 && stg7.b3 || stg7.b4);
    if(ok){
-      $("#lamp").attr("src", "_images/lamp_on.png");
+      $("#lamp").attr("src", "images/lamp_on.png");
       show_button('#next');
       $("#botao1").off("click");
       $("#botao2").off("click");
